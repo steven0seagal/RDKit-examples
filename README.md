@@ -52,15 +52,16 @@ pip install -r requirements.txt
 
 ```
 RDKit-examples/
-├── environment.yml          # Conda environment specification
-├── requirements.txt         # Python package dependencies
-├── example.py              # Basic RDKit example script
-├── analysis.ipynb          # Comprehensive RDKit analysis notebook
-├── my_molecule.sdf         # Sample molecule in SDF format
-├── my_molecule_formats.csv # Molecule data in various formats
-├── my_molecule_properties.csv # Calculated molecular properties
-├── my_molecule_structure.png # Molecule structure image
-└── README.md               # This file
+├── environment.yml              # Conda environment specification
+├── requirements.txt             # Python package dependencies
+├── example.py                  # Basic RDKit example script
+├── complete_analysis.py        # Interactive RDKit analysis script
+├── analysis.ipynb              # Comprehensive RDKit analysis notebook
+├── my_molecule.sdf             # Sample molecule in SDF format
+├── my_molecule_formats.csv     # Molecule data in various formats
+├── my_molecule_properties.csv  # Calculated molecular properties
+├── my_molecule_structure.png   # Molecule structure image
+└── README.md                   # This file
 ```
 
 ## Quick Start
@@ -71,13 +72,25 @@ Run the basic example script:
 python example.py
 ```
 
+Run the interactive analysis script:
+
+```bash
+python complete_analysis.py
+```
+
 Or explore the comprehensive analysis notebook:
 
 ```bash
 jupyter notebook analysis.ipynb
 ```
 
-## Analysis Notebook
+## Analysis Tools
+
+### Interactive Script (`complete_analysis.py`)
+
+A command-line tool for interactive chemical analysis. Run it to analyze molecules with a menu-driven interface covering all major RDKit functionalities.
+
+### Analysis Notebook (`analysis.ipynb`)
 
 The `analysis.ipynb` notebook provides a comprehensive guide to using RDKit for chemical analysis, including:
 
